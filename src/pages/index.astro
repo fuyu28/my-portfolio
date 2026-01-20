@@ -3,8 +3,8 @@ import "../styles/global.css";
 import HighlightGrid from "../components/HighlightGrid";
 
 const highlights = [
-  { title: "Field", value: "Information Engineering" },
-  { title: "Strength", value: "Systems + Frontend" },
+  { title: "Field", value: "Information Engineering (B2)" },
+  { title: "Strength", value: "Backend 60% + Frontend 40%" },
   { title: "Based", value: "Japan / Remote" }
 ];
 ---
@@ -21,10 +21,9 @@ const highlights = [
       <section class="relative grid gap-8 overflow-hidden rounded-[32px] border border-line bg-white p-10 shadow-soft">
         <div class="relative z-10 grid gap-4 animate-rise">
           <span class="text-sm uppercase tracking-[0.3em] text-accent">Portfolio</span>
-          <h1 class="text-3xl font-display sm:text-5xl">Your Name</h1>
+          <h1 class="text-3xl font-display sm:text-5xl">Yu Yamaguchi</h1>
           <p class="max-w-2xl">
-            情報工学系の学生として取り組んでいるテーマや興味領域を一文で
-            まとめる場所です。
+            バックエンドを軸に、堅牢性と運用性を意識したWebアプリケーション開発に取り組んでいる情報工学系学生です。
           </p>
           <div class="flex flex-wrap gap-4">
             <a
@@ -51,13 +50,16 @@ const highlights = [
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">Profile</h3>
             <p class="mt-3">
-              自己紹介文をここに。専攻・研究テーマ・興味分野などの概要を簡潔に。
+              名城大学 情報工学部 B2。バックエンド開発を主軸に、Webアプリケーションの設計・実装・運用まで一貫して取り組んでいます。
+              Linux（EndeavourOS）を常用し、個人開発・チーム開発の両方で「堅牢性」と「運用性」を意識した設計を心がけています。
             </p>
           </article>
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">Now</h3>
             <p class="mt-3">
-              現在注力している分野や学習内容、次に挑戦したいことを記載。
+              Go を用いたバックエンド開発を中心に学習・開発を進めています。
+              併せて CTF を通してセキュリティ分野にも触れ始めており、安全なWebアプリケーション設計への理解を深めています。
+              長期運用を前提とした構成・ログ設計・デプロイ手順の整備にも関心があります。
             </p>
           </article>
         </div>
@@ -69,21 +71,22 @@ const highlights = [
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">Certifications</h3>
             <ul class="mt-4 grid gap-3 text-neutral-600">
-              <li class="border-b border-dashed border-line pb-3">資格名 + 年</li>
-              <li class="border-b border-dashed border-line pb-3">資格名 + 年</li>
-              <li>資格名 + 年</li>
+              <li class="border-b border-dashed border-line pb-3">応用情報技術者試験（2025年）</li>
+              <li>情報処理安全確保支援士試験（2025年）</li>
             </ul>
           </article>
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">Skills</h3>
             <ul class="mt-4 grid gap-3 text-neutral-600">
               <li class="border-b border-dashed border-line pb-3">
-                言語・フレームワーク
+                言語・フレームワーク：TypeScript / Go / Python / React / Next.js
               </li>
               <li class="border-b border-dashed border-line pb-3">
-                VPS運用・ネットワーク・ツール
+                インフラ・運用：Linux（Arch系・Debian系）/ Docker / Cloudflare / Proxmox（基礎）
               </li>
-              <li>研究・授業で扱ったトピック</li>
+              <li>
+                開発：チーム開発 / タスク分割・進行管理 / 環境構築 / 基本的なセキュリティ知識（CTF）
+              </li>
             </ul>
           </article>
         </div>
@@ -93,21 +96,44 @@ const highlights = [
         <h2 class="text-2xl sm:text-3xl">Projects</h2>
         <div class="mt-5 grid gap-5 md:grid-cols-3">
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
-            <h3 class="text-lg">Project Title</h3>
+            <h3 class="text-lg">すごすぎる時間割</h3>
             <p class="mt-3">
-              取り組んだプロジェクトの概要と成果を短くまとめる欄です。
+              名城大学生のための大学生活支援アプリ。Hack U 名城大学 2024 作品として制作し、名城大学賞を受賞。
+              現在もサークルで継続開発しています。学務サイトにログインが必要な操作をアプリから扱える体験を目指しました。
+            </p>
+            <p class="mt-4 text-sm text-neutral-600">
+              Links:
+              <a class="underline" href="https://hacku.yahoo.co.jp/meijo2024/" target="_blank" rel="noreferrer">Hack U</a>
+              /
+              <a class="underline" href="https://play.google.com/store/apps/details?id=com.jogiken.sugosugiru&pcampaignid=web_share" target="_blank" rel="noreferrer">Google Play</a>
+              /
+              <a class="underline" href="https://apps.apple.com/in/app/%E3%81%99%E3%81%94%E3%81%99%E3%81%8E%E3%82%8B%E6%99%82%E9%96%93%E5%89%B2/id6744370038" target="_blank" rel="noreferrer">App Store</a>
             </p>
           </article>
+
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
-            <h3 class="text-lg">Project Title</h3>
+            <h3 class="text-lg">学生知恵袋</h3>
             <p class="mt-3">
-              技術選定・担当範囲・学びなどを簡潔に書きます。
+              大学の勉強について質問したり、問題を共有したりできるWebアプリ。
+              授業「PBL概論」でのチーム開発として制作し、メイン開発者として設計・実装を主導しました。
+              タスク分割や進捗管理も担当し、開発の推進役を担いました。
+            </p>
+            <p class="mt-4 text-sm text-neutral-600">
+              Link:
+              <a class="underline" href="https://github.com/fuyu28/gakusei-chiebukuro" target="_blank" rel="noreferrer">GitHub</a>
             </p>
           </article>
+
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
-            <h3 class="text-lg">Project Title</h3>
+            <h3 class="text-lg">Cloud Launch</h3>
             <p class="mt-3">
-              研究活動やハッカソンなどもここに追加できます。
+              S3互換のクラウドストレージを用いて、ゲームのセーブデータを複数PC間で共有できる
+              Electron製デスクトップアプリ。個人開発として、同期処理やクラウド連携を実装しました。
+              ローカル環境差異を意識し、継続運用できる構成を目指しています。
+            </p>
+            <p class="mt-4 text-sm text-neutral-600">
+              Link:
+              <a class="underline" href="https://github.com/fuyu28/CloudLaunch" target="_blank" rel="noreferrer">GitHub</a>
             </p>
           </article>
         </div>
@@ -117,14 +143,16 @@ const highlights = [
         <h2 class="text-2xl sm:text-3xl">Contact</h2>
         <article class="mt-5 rounded-3xl border border-line bg-white p-6 shadow-card">
           <p>
-            連絡先（メール・GitHubなど）を記載。VPSデプロイ予定も添える。
+            Email: <a href="mailto:info@fuyu28.com">info@fuyu28.com</a>
+            <br />
+            GitHub: <a href="https://github.com/fuyu28" target="_blank" rel="noreferrer">fuyu28</a>
           </p>
         </article>
       </section>
 
       <footer class="mt-16 flex flex-wrap justify-between gap-4 border-t border-line pt-6 text-sm text-neutral-500">
         <span>Built with Astro + React.</span>
-        <span>Replace all text with your own details.</span>
+        <span>© {new Date().getFullYear()} Yu Yamaguchi</span>
       </footer>
     </main>
   </body>
