@@ -49,17 +49,28 @@ const highlights = [
         <div class="mt-5 grid gap-5 md:grid-cols-2">
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">Profile</h3>
-            <p class="mt-3">
-              名城大学 情報工学部 B2。バックエンド開発を主軸に、Webアプリケーションの設計・実装・運用まで一貫して取り組んでいます。
-              Linux（EndeavourOS）を常用し、個人開発・チーム開発の両方で「堅牢性」と「運用性」を意識した設計を心がけています。
-            </p>
+              <p class="mt-3">
+                名城大学 情報工学部 B2。
+              </p>
+              <p class="mt-2">
+                バックエンド開発を主軸に、Webアプリケーションの設計・実装・運用まで一貫して取り組んでいます。
+              </p>
+              <p class="mt-2">
+                Linux（EndeavourOS）を常用し、個人開発・チーム開発の両方で
+                「堅牢性」と「運用性」を意識した設計を心がけています。
+              </p>
           </article>
           <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">Now</h3>
             <p class="mt-3">
               Go を用いたバックエンド開発を中心に学習・開発を進めています。
-              併せて CTF を通してセキュリティ分野にも触れ始めており、安全なWebアプリケーション設計への理解を深めています。
-              長期運用を前提とした構成・ログ設計・デプロイ手順の整備にも関心があります。
+            </p>
+            <p class="mt-2">
+              併せて CTF を通してセキュリティ分野にも触れ始めており、
+              安全なWebアプリケーション設計への理解を深めています。
+            </p>
+            <p class="mt-2">
+              長期運用を前提とした構成設計や、ログ設計・デプロイ手順の整備にも関心があります。
             </p>
           </article>
         </div>
@@ -95,12 +106,20 @@ const highlights = [
       <section id="projects" class="mt-16 animate-rise [animation-delay:0.3s]">
         <h2 class="text-2xl sm:text-3xl">Projects</h2>
         <div class="mt-5 grid gap-5 md:grid-cols-3">
-          <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
+          <article class="flex h-full flex-col rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">すごすぎる時間割</h3>
-            <p class="mt-3">
-              名城大学生のための大学生活支援アプリ。Hack U 名城大学 2024 作品として制作し、名城大学賞を受賞。
-              現在もサークルで継続開発しています。学務サイトにログインが必要な操作をアプリから扱える体験を目指しました。
-            </p>
+              <p class="mt-3">
+                名城大学生のための大学生活支援アプリ。
+              </p>
+              <p class="mt-2">
+                Hack U 名城大学 2024 作品として制作し、名城大学賞を受賞しました。
+              </p>
+              <p class="mt-2">
+                現在もサークルで継続開発を行っています。
+              </p>
+              <p class="mt-2">
+                学務サイトにログインが必要な操作を、アプリから扱える体験を目指しました。
+              </p>
             <p class="mt-4 text-sm text-neutral-600">
               Links:
               <a class="underline" href="https://hacku.yahoo.co.jp/meijo2024/" target="_blank" rel="noreferrer">Hack U</a>
@@ -111,26 +130,37 @@ const highlights = [
             </p>
           </article>
 
-          <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
+          <article class="flex h-full flex-col rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">学生知恵袋</h3>
-            <p class="mt-3">
-              大学の勉強について質問したり、問題を共有したりできるWebアプリ。
-              授業「PBL概論」でのチーム開発として制作し、メイン開発者として設計・実装を主導しました。
-              タスク分割や進捗管理も担当し、開発の推進役を担いました。
-            </p>
+              <p class="mt-3">
+                大学の勉強について質問・問題共有ができるWebアプリケーションです。
+              </p>
+              <p class="mt-2">
+                授業「PBL概論」でのチーム開発として制作しました。
+              </p>
+              <p class="mt-2">
+                メイン開発者として設計・実装を主導し、
+                タスク分割や進捗管理を行いながら開発を進めました。
+              </p>
             <p class="mt-4 text-sm text-neutral-600">
               Link:
               <a class="underline" href="https://github.com/fuyu28/gakusei-chiebukuro" target="_blank" rel="noreferrer">GitHub</a>
             </p>
           </article>
 
-          <article class="rounded-3xl border border-line bg-white p-6 shadow-card">
+          <article class="flex h-full flex-col rounded-3xl border border-line bg-white p-6 shadow-card">
             <h3 class="text-lg">Cloud Launch</h3>
-            <p class="mt-3">
-              S3互換のクラウドストレージを用いて、ゲームのセーブデータを複数PC間で共有できる
-              Electron製デスクトップアプリ。個人開発として、同期処理やクラウド連携を実装しました。
-              ローカル環境差異を意識し、継続運用できる構成を目指しています。
-            </p>
+              <p class="mt-3">
+                S3互換のクラウドストレージを利用し、
+                ゲームのセーブデータを複数PC間で共有できる
+                Electron製デスクトップアプリです。
+              </p>
+              <p class="mt-2">
+                個人開発として、クラウド連携や同期処理の設計・実装を行いました。
+              </p>
+              <p class="mt-2">
+                ローカル環境差異を意識し、継続的に運用できる構成を目指しています。
+              </p>
             <p class="mt-4 text-sm text-neutral-600">
               Link:
               <a class="underline" href="https://github.com/fuyu28/CloudLaunch" target="_blank" rel="noreferrer">GitHub</a>
@@ -143,9 +173,9 @@ const highlights = [
         <h2 class="text-2xl sm:text-3xl">Contact</h2>
         <article class="mt-5 rounded-3xl border border-line bg-white p-6 shadow-card">
           <p>
-            Email: <a href="mailto:info@fuyu28.com">info@fuyu28.com</a>
+            Email: <a class="underline" href="mailto:info@fuyu28.com">info@fuyu28.com</a>
             <br />
-            GitHub: <a href="https://github.com/fuyu28" target="_blank" rel="noreferrer">fuyu28</a>
+            GitHub: <a class="underline" href="https://github.com/fuyu28" target="_blank" rel="noreferrer">fuyu28</a>
           </p>
         </article>
       </section>

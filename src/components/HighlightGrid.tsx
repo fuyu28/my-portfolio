@@ -7,6 +7,7 @@ type HighlightItem = {
 
 type HighlightGridProps = {
   items?: HighlightItem[];
+  className?: string;
 };
 
 const fallbackItems: HighlightItem[] = [
@@ -15,9 +16,11 @@ const fallbackItems: HighlightItem[] = [
   { title: "Availability", value: "Open for internships" },
 ];
 
-const HighlightGrid: FC<HighlightGridProps> = ({ items = fallbackItems }) => {
+const HighlightGrid: FC<HighlightGridProps> = ({ items = fallbackItems, className }) => {
+  const classes = ["grid gap-4 sm:grid-cols-3", className ? className : ""].join(" ").trim();
+
   return (
-    <div className="grid gap-4 sm:grid-cols-3" role="list">
+    <div className={classes} role="list">
       {items.map((item) => (
         <article
           className="grid gap-2 rounded-2xl border border-line bg-white px-5 py-4 shadow-card"
